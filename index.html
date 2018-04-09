@@ -12,27 +12,49 @@
 <form action="/action_page.php">
 <h2> Personal details </h2>
 <div class="blank">Name: <input type="text"></div>
-<div class="blank">Password: <input type="password"></div>
-<div class="blank">E-mail: <input type="text"></div>
+<div class="blank">Surname: <input type="text"></div>
+<div class="blank">E-mail: <input type="email"></div>
 <div class="blank">Gender:
 <label><input type="radio" name="gender"> Male</label>
 <label><input type="radio" name="gender"> Female</label></div>
-<div class="blank">Contact: <input type="text"></div>
-<h2> Educational Qualification </h2>
-<div class="blank">Degree:
-  <select name="degree">
-      <option value="inz">inżynier</option>
-      <option value="mag">magister</option>
-      <option value="doc">doktor</option>
-      <option value="prof">profesor</option>
-    </select></div>
-<div class="blank">Hobbies:
-  <label><input type="radio" name="hobby"> Playing chess</label>
-  <label><input type="radio" name="hobby"> Upalanie Sierry</label></div>
-<h2> Adress </h2>
-<div class="blank" style="height: 100px;">
-  <textarea name="adress" cols="30" rows="5">Dej no adres, kierowniku!</textarea></div>
-<div class="blank">Attach a file: <input type="file"></div>
+<div class="blank">Product:
+  <select name="product">
+      <option value="shirt">Shirt</option>
+      <option value="hat">Hat</option>
+      <option value="jumper">Jumper</option>
+          </select></div>
+<div class="blank">Size:
+            <select name="size">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select></div>
+<div class="blank">Color:
+  <input type="color" name="favcolor"></div>
+  <h2> Adress </h2>
+  <div class="blank">Country:
+    <select name="country">
+      <option value="AT">Austria</option>
+      <option value="BE">Belgium</option>
+      <option value="HR">Croatia</option>
+      <option value="FR">France</option>
+      <option value="GB">Great Britain</option>
+      <option value="GR">Greece</option>
+      <option value="DE">Germany</option>
+      <option value="LT">Lithuania</option>
+      <option value="PL">Poland</option>
+      <option value="SK">Slovakia</option>
+      <option value="LU">Luxembourg</option>
+      <option value="ES">Spain</option>
+    </select>
+
+    </div>
+<div class="blank">Street: <input type="text"></div>
+  <div class="blank">Zip Code:
+    <input type="text" name="zipcode" pattern="[0-9]{5}"> </div>
+<div class="blank">Fast delivery(+5zł) <input name="delivery" type="checkbox"></div>
 <div class="blank"><input type="submit" value="Submit"></div>
 
 </form>
